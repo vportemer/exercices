@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D7FDCC1-7DCA-4453-AB99-3683112CB1C9}</ProjectGuid>
+    <ProjectGuid>{61936091-8CB5-4533-9949-B9BCDC3824DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>correction_nombre_premier</RootNamespace>
-    <AssemblyName>correction nombre premier</AssemblyName>
+    <RootNamespace>compt_voyelle_2</RootNamespace>
+    <AssemblyName>compt voyelle 2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
