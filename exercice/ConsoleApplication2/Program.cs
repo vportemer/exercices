@@ -10,7 +10,7 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-
+            
             Boite[] tabBoite = new Boite[3];
             Boite maBoite = tabBoite[1];
 
