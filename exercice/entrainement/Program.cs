@@ -10,7 +10,17 @@ namespace entrainement
     {
         static void Main(string[] args)
         {
-            Demo();
+            Voiture.Marque = "Renault"; //Marque est static
+            Voiture VoitureVirginie = new Voiture();
+            Voiture VoitureFlorian = new Voiture();
+
+            //VoitureFlorian.ModifierMarque("Ferrari");
+
+            Console.WriteLine("J'ai {0} instances de Voiture.", Voiture.Compteur);
+            //Console.WriteLine("La marque de ma voiture est {0}.", VoitureVirginie.RetournerMarque());
+
+
+         //   Demo();
             Console.ReadKey();
         }
         static void Demo()
@@ -77,6 +87,38 @@ namespace entrainement
                 string valeur = Console.ReadLine();
                 int x = int.Parse(valeur);
             }
+        }
+
+        class Voiture
+        {
+            private static string _marque;
+            private  int _compteur = 0;
+
+            public static string Marque
+            {
+                get { return _marque; }
+                set { _marque = value; }
+            }
+
+            public  int Compteur {
+                get { return _compteur; }
+            }
+
+            public Voiture()
+            {
+                _compteur++;
+            }
+
+            public string RetournerMarque ()
+            {
+                return _marque;
+            }
+
+            public void ModifierMarque(string marque)
+            {
+                _marque = marque;
+            }
+
         }
     }
 }
