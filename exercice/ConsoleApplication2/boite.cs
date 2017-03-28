@@ -69,9 +69,7 @@ namespace ConsoleApplication2
             _largeur = larg;
             _hauteur = haut;
         }
-
-
-        public Boite(double longu, double haut, double larg, Matieres mat) : this(longu, haut, larg)
+                        public Boite(double longu, double haut, double larg, Matieres mat) : this(longu, haut, larg)
         {
             Matiere = mat;
         }
