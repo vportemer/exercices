@@ -16,7 +16,7 @@ namespace entrainement
 
             //VoitureFlorian.ModifierMarque("Ferrari");
 
-            Console.WriteLine("J'ai {0} instances de Voiture.", Voiture.Compteur);
+          //  Console.WriteLine("J'ai {0} instances de Voiture.", Voiture.Compteur);
             //Console.WriteLine("La marque de ma voiture est {0}.", VoitureVirginie.RetournerMarque());
 
 

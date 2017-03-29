@@ -15,13 +15,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ucomptvoyelle", "ConsoleApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "erreur", "erreur\erreur.csproj", "{AD571BB1-DC9E-436A-8352-3025FF666127}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ucompt voyelle 2", "compt voyelle 2\ucompt voyelle 2.csproj", "{61936091-8CB5-4533-9949-B9BCDC3824DA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "users", "users\users.csproj", "{C26B0184-9FE4-4A03-BBA3-4B360030F2D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boites", "ConsoleApplication2\boites.csproj", "{84DFDC53-9AC3-4215-92E5-1EA00339D348}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "véhicules", "véhicules\véhicules.csproj", "{AFDA3258-8631-4448-A2DE-8315309DB873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBoite", "TestBoite\TestBoite.csproj", "{563CFBC0-FD2A-4259-AF14-BBA735E23066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication3", "ConsoleApplication3\ConsoleApplication3.csproj", "{1ABF6459-AD08-42CC-A4D0-672058050DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animaux", "Animaux\Animaux.csproj", "{DF16004A-D267-4AAD-B8D7-C2F9288F2687}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +57,6 @@ Global
 		{AD571BB1-DC9E-436A-8352-3025FF666127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD571BB1-DC9E-436A-8352-3025FF666127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD571BB1-DC9E-436A-8352-3025FF666127}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61936091-8CB5-4533-9949-B9BCDC3824DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61936091-8CB5-4533-9949-B9BCDC3824DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61936091-8CB5-4533-9949-B9BCDC3824DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61936091-8CB5-4533-9949-B9BCDC3824DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C26B0184-9FE4-4A03-BBA3-4B360030F2D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C26B0184-9FE4-4A03-BBA3-4B360030F2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C26B0184-9FE4-4A03-BBA3-4B360030F2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +69,18 @@ Global
 		{AFDA3258-8631-4448-A2DE-8315309DB873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFDA3258-8631-4448-A2DE-8315309DB873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFDA3258-8631-4448-A2DE-8315309DB873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563CFBC0-FD2A-4259-AF14-BBA735E23066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563CFBC0-FD2A-4259-AF14-BBA735E23066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563CFBC0-FD2A-4259-AF14-BBA735E23066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563CFBC0-FD2A-4259-AF14-BBA735E23066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABF6459-AD08-42CC-A4D0-672058050DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABF6459-AD08-42CC-A4D0-672058050DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABF6459-AD08-42CC-A4D0-672058050DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABF6459-AD08-42CC-A4D0-672058050DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF16004A-D267-4AAD-B8D7-C2F9288F2687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF16004A-D267-4AAD-B8D7-C2F9288F2687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF16004A-D267-4AAD-B8D7-C2F9288F2687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF16004A-D267-4AAD-B8D7-C2F9288F2687}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

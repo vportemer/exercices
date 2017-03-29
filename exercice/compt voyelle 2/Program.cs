@@ -15,16 +15,16 @@ namespace compt_voyelle_2
             string saisie;
             Console.WriteLine("saisir un mot");
             saisie = Console.ReadLine();
-            calcul(saisie, out c, out v);
+            Calcul(saisie, out c, out v);
             Console.WriteLine(" {0} comporte {1} voyelles et {2} consonnes", saisie, v, c);
             Console.ReadKey();
 
         }
-        static void calcul(string mot, out int nbcons, out int nbvoy)
+        static void Calcul(string mot, int nbcons, int nbvoy)
         {
-            for (int i=[0]; i>mot.Length ; i++)
+            for (int i=0; i>mot.Length ; i++)
             {
-                if (mot[0]=='a'||)
+        //        if (mot[0]=='a'||)
             }
         }
     }

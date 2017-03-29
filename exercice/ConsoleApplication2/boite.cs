@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication2
+namespace Boites
 {
     public enum Couleurs { Blanc, Bleu, Vert, Jaune, Orange, Rouge, Marron }
     public enum Matieres { Carton, Plastique, Bois, Métal }
@@ -13,8 +13,6 @@ namespace ConsoleApplication2
     {
 
         //  public static int 
-
-
         #region champs privés 
         //déclare les attributs
         private double _largeur;
@@ -40,50 +38,32 @@ namespace ConsoleApplication2
             get { return _hauteur; }
         }
         public Couleurs Couleur { get; set; }
-
-
         public Matieres Matiere { get; private set; }
-
-
+        public static int CompteurBoite { get; private set; }
         public double Volume
         {
             get { return _largeur * _longueur * _hauteur; }
         }
-
         #endregion
 
         #region Constructeurs
         //permet d'initialiser la class, on l'appele avec new 
         public Boite()
         {
-            _largeur = 30;
-            _hauteur = 30;
-            _longueur = 30;
             Matiere = Matieres.Carton;
+            CompteurBoite++;
         }
-        public Boite(double longu, double haut, double larg)
+        public Boite(double longu, double haut, double larg) : this()
         {
-
-
             _longueur = longu;
             _largeur = larg;
             _hauteur = haut;
         }
-                        public Boite(double longu, double haut, double larg, Matieres mat) : this(longu, haut, larg)
+        public Boite(double longu, double haut, double larg, Matieres mat) : this(longu, haut, larg)
         {
             Matiere = mat;
         }
-
-
-        public Boite(double taille)
-        {
-            _largeur = taille;
-            _hauteur = taille;
-            _longueur = taille;
-        }// pour appeller Boite too =new Boite (20)
         #endregion
-
-
 
         #region Méthodes publiques 
         // on peut appeller la fonction en dehors de la class
@@ -97,10 +77,10 @@ namespace ConsoleApplication2
             Etiqueter(destinataire);
             if (fragile)
             {
-                _etiquetteFragile = new Etiquette
+            //    _etiquetteFragile = new Etiquette();
                 {
 
-                };
+                } 
             }
 
         }

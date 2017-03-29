@@ -25,6 +25,20 @@ namespace Véhicules
 
             Console.WriteLine(b.Description);
            Console.WriteLine(c.Description);
+
+            //Véhicule d = new Véhicule();
+
+            Voiture b2 = new Voiture();
+           
+            int ggh = b2.CompareTo(c);
+            if (ggh == 0)
+            {
+                Console.WriteLine("La {0} est plus économique que la {1} ", b2.Nom,c.Nom);
+            }
+                    
+            
+            
+
             Console.ReadKey();
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication2
+namespace Boites
 {
 
     class Program
@@ -17,7 +17,7 @@ namespace ConsoleApplication2
             // Boite[] tabBoite = new Boite[3];
             Boite maBoite = new Boite();
 
-            b1
+            
 
            
 
