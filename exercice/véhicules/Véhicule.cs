@@ -12,7 +12,7 @@ namespace Véhicules
 
         public string Nom { get; }
         public int NbRoues { get; }
-        public string Energie { get; }
+        public Energies Energie { get; }
         public virtual string Description
         {
             get
@@ -22,6 +22,7 @@ namespace Véhicules
             }
         }
         public abstract double PRK { get; }
+        public int Prix { get; }
         #endregion
 
         #region Constructeurs
@@ -29,81 +30,106 @@ namespace Véhicules
         {
             NbRoues = 4;
         }
-        public Véhicule(string nom, int nbroues, string energie)
+        public Véhicule(string nom, int nbroues, Energies energie)
         {
             Nom = nom;
             NbRoues = nbroues;
             Energie = energie;
         }
-
+        public Véhicule(string nom, int prix)
+        {
+            Nom = nom;
+            Prix = prix;
+      
+        }
         #endregion
         #region Méthodes publiques
         public abstract void CalculerConso();
-        #endregion
+        
         public int CompareTo(object objet)
-            {
+        {
             Véhicule v = (Véhicule)objet;
             //if (PRK < v.PRK)
             //    return - 1;
             //if (PRK > v.PRK)
             //    return 1;
             //return 0;
-            return PRK.CompareTo(v.PRK);
+            return Prix.CompareTo(v.Prix);
         }
-}
-
-public class Voiture : Véhicule
-{
-    #region Propriétés
-    public override string Description
-    {
-        get { return string.Format("Je suis une voiture\r\n") + base.Description; }
+        #endregion
     }
 
-    public override double PRK
+    public class Voiture : Véhicule
     {
-        get
+        #region Propriétés
+        public override string Description
         {
-            return 2;
+            get { return string.Format("Je suis une voiture\r\n") + base.Description; }
         }
-    }
 
-    #endregion
-
-
-    #region Constructeurs
-    public Voiture() : base()
-    {
-
-    }
-
-    public override void CalculerConso()
-    {
-        throw new NotImplementedException();
-    }
-    #endregion
-}
-public class Moto : Véhicule
-{
-    public override string Description
-    {
-        get
+        public override double PRK
         {
-            { return string.Format("Je suis une moto\r\n") + base.Description; };
+            get
+            {
+                return 2;
+            }
         }
-    }
+        #endregion
 
-    public override double PRK
-    {
-        get
+
+        #region Constructeurs
+        public Voiture(string nom, Energies energie) : base(nom, 4, energie)
         {
-            return 2;
-        }
-    }
 
-    public override void CalculerConso()
-    {
-        throw new NotImplementedException();
+        }
+
+        public override void CalculerConso()
+        {
+            throw new NotImplementedException();
+        }
+        public Voiture(string nom, int prix) :base (nom, prix)
+        {
+
+        }
+        #endregion
     }
-}
+    public class Moto : Véhicule
+    {
+        #region Propriétés
+
+
+        public override string Description
+        {
+            get
+            {
+                { return string.Format("Je suis une moto\r\n") + base.Description; };
+            }
+        }
+
+        public override double PRK
+        {
+            get
+            {
+                return 2;
+            }
+        }
+        #endregion
+
+        #region Constructeurs
+
+        public override void CalculerConso()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Moto(string nom, Energies energie) : base(nom, 2, energie)
+        {
+
+        }
+        public Moto (string nom, int prix) : base(nom, prix)
+        {
+
+        }
+        #endregion
+    }
 }
