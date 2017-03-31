@@ -13,7 +13,7 @@ namespace Animaux
         {
             get
             {
-                return "Je suis l'animal";
+                return string.Format("Je suis l'animal");
             }
         }
         public static int Compteur { get; private set; }

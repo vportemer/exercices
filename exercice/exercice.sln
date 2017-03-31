@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animaux", "Animaux\Animaux.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "statut", "statut\statut.csproj", "{FF786163-3352-455E-A458-D09C672CCEDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meuble", "Meuble\Meuble.csproj", "{F2890350-62E3-41C7-85A0-34BCB8655839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "link", "link\link.csproj", "{A4A64D8F-D62F-4272-994E-60BE9B838D8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{FF786163-3352-455E-A458-D09C672CCEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF786163-3352-455E-A458-D09C672CCEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF786163-3352-455E-A458-D09C672CCEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2890350-62E3-41C7-85A0-34BCB8655839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2890350-62E3-41C7-85A0-34BCB8655839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2890350-62E3-41C7-85A0-34BCB8655839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2890350-62E3-41C7-85A0-34BCB8655839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A64D8F-D62F-4272-994E-60BE9B838D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A64D8F-D62F-4272-994E-60BE9B838D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A64D8F-D62F-4272-994E-60BE9B838D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A64D8F-D62F-4272-994E-60BE9B838D8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
